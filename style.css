@@ -1,0 +1,72 @@
+/* Полигоны магазинов */
+.scheme {
+	width: 1074px;
+	height: 650px;
+	position: relative;
+	overflow: hidden;
+}
+.scheme svg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1074px;
+	height: 650px;
+}
+.scheme path {
+	fill: #FFDBA4;
+	cursor: pointer;
+}
+.scheme path {
+	fill: #FFDBA4;
+	cursor: pointer;
+}
+
+/* Цвета магазинов - при наведении мышкой и активный */
+.scheme path:hover, #hover {
+	fill: #32d296;
+	fill-opacity: 0.3;
+}
+.scheme path.sold:hover, #hover.sold {
+	fill: #f0506e;
+}
+
+/* Названия и подсказки магазинов */
+.scheme-item {
+	position: absolute;
+	cursor: pointer;
+}
+.scheme-name {
+	background-color: #ffffff;
+	font-size: 14px;
+	line-height: 2.15;
+	font-weight: 700;
+	border-radius: 20px;
+	color: #223d72;
+	font-family: 'Roboto', sans-serif;
+	height: 30px;
+	width: 30px;
+	padding-top: 0px;
+	text-align: center;
+}
+.sold .scheme-name {
+	background-color: #ffeff2;
+    color: #f0506e;
+}
+.scheme-popup {
+	display: none;
+	top: 20px;
+	left: 20px;
+	padding: 10px;
+	border-radius: 15px;
+	width: 200px;
+	position: fixed;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	background: #fff;
+	z-index: 9999;
+	text-align: left;
+}
+.scheme-popup span {
+	font-weight: bold;
+}
