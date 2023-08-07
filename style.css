@@ -69,4 +69,8 @@
 }
 .scheme-popup span {
 	font-weight: bold;
+	color: #4c72bb;
+}
+.scheme-popup .num span {
+	font-size: 1rem;
 }
