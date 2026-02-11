@@ -7,6 +7,27 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<style>
+		/* 1. Скрыть скроллбар в Chrome / Safari / Edge (WebKit) */
+		html::-webkit-scrollbar,
+		body::-webkit-scrollbar,
+		.scheme::-webkit-scrollbar {
+		    display: none;               /* полностью убираем полосу */
+		}
+		
+		/* 2. Скрыть скроллбар в Firefox */
+		html,
+		body,
+		.scheme {
+		    scrollbar-width: none;       /* "none" – без полосы */
+		}
+		
+		/* 3. Скрыть скроллбар в старых версиях IE / Edge (Trident) */
+		html,
+		body,
+		.scheme {
+		    -ms-overflow-style: none;    /* отключаем стили скроллбара */
+		}
+		
 		/* Полигоны участков */
 		.scheme {
 			width: 1160px;
@@ -869,6 +890,7 @@
 	</script>
 </body>
 </html>
+
 
 
 
